@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marca</title>
+</head>
+
+<body>
+    <a href="primeiraPagina.html">Menu</a>
+    <a href="index.html">Inicio</a>
+    <a href="cadastro-modelo.html">Modelo</a>
+    <a href="cadastro-veiculo.html">Veículo</a><br>
+    <h1>Cadastro de Marca</h1>
+    <label for="inserirMarca"><b>Inserir nome da marca</b></label>
+    <input type="text" name="nome" id="inserirMarca">
+    <button type="submit" onclick="cadastrarMarca()">Cadastrar</button><br><br>
+    <h2>Marcas cadastradas:</h2>
+    <ul class="marcas">
+        
+    </ul>
+
+    <script>
+    
+
+    function cadastrarMarca(){
+        var marcaEscrita = document.getElementsByName("nome")[0];
+        var marcasCadastradas = document.getElementsByClassName("marcas")[0];
+
+        var liMarca = document.createElement('li');
+        liMarca.classList = 'marca';
+        liMarca.innerHTML = marcaEscrita.value;
+        marcasCadastradas.appendChild(liMarca);
+        console.log(marcasCadastradas.value);  
+    
+    }
+    
+      
+    </script>
+
+</body>
+
+</html>

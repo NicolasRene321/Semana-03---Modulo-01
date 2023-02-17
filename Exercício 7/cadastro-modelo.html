@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo</title>
+</head>
+
+<body>
+    <div>
+        <a href="primeiraPagina.html">Menu</a>
+        <a href="index.html">Inicio</a>
+        <a href="cadastro-marca.html">Marca</a>
+        <a href="cadastro-veiculo.html">Veículo</a><br>
+    </div>
+    
+    <h1>Cadastrar Modelo</h1>
+    <label for="inserirModelo">Insira o modelo</label>
+    <input type="text" id="inserirModelo" name="modelo"><br><br>
+    <label for="marcaEscolhida">Escolha a marca</label>
+    <select id="marcaEscolhida">
+        <option value="Toyota">Toyota</option>
+        <option value="Volkswagen">Volkswagen</option>
+        <option value="Ford">Ford</option>
+    </select><br><br>
+    <button type="submit" onclick="cadastrarMarcaModelo()">Cadastrar</button><br>
+    
+    <div class="localModelos">
+        <ul>
+
+        </ul>
+    </div>
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
