@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veículo</title>
+</head>
+
+<body>
+    <div>
+        <a href="primeiraPagina.html">Menu</a>
+        <a href="index.html">Inicio</a>
+        <a href="cadastro-marca.html">Marca</a>
+        <a href="cadastro-modelo.html">Modelo</a><br>
+    </div>
+    <h1>Cadastro de Veículo</h1>
+    <label for="tipoModelo">Escolha o modelo:</label>
+    <select id="selectModel" name="tipoModelo">
+        <option value="Corolla">Corolla</option>
+        <option value="T-Cross">T-Cross</option>
+        <option value="Mustang">Mustang</option>
+    </select><br><br>
+
+    <label for="linkImg">Coloque o link da imagem:</label>
+    <input type="text" name="linkImg"><br><br>
+    <label for="typeColor">Coloque o nome da cor:</label>
+    <input type="text" name="typeColor"><br><br>
+    <label for="typeKm">Coloque o valor da quilometragem:</label>
+    <input type="number" name="typeKm"><br><br>
+    <label for="typeValue">Coloque o valor do veículo:</label>
+    <input type="text" name="typeValue"><br><br>
+
+    <button type="submit" id="cadastro">Cadastrar</button>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
